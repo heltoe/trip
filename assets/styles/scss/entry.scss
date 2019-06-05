@@ -1,0 +1,21 @@
+// @import "./mixins.scss";
+// @import "./header.scss";
+$black: black;
+$lightBlack: #535353;
+
+body {
+  background-color: $lightBlack;
+  .some {
+    background: red;
+    &:hover {
+      background: yellow;
+    }
+    &:after,
+    &:before {
+      // 
+    }
+  }
+  p {
+    background: green;
+  }
+}

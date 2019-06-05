@@ -1,0 +1,74 @@
+// основные правила
+// миксин брекпоинтов
+@mixin breakpoint-width($min, $max : 0) {
+  @if ($max == 0) {
+    @media only screen
+    and (min-width: $min) { @content; }
+  } @else {
+    @media only screen
+    and (min-width: $min)
+    and (max-width: $max - 1) { @content; }
+  }
+}
+// 
+@mixin between-children {
+  &>:not(:first-child) {
+    @content;
+  }
+}
+// обертка над миксином брекпоинта
+@mixin desktopLarge($max : 1200px) { // (min-width: 0) and (max-width: 1200px)
+  @include breakpoint-width($max) {
+    @content;
+  }
+}
+@mixin largeTablet($min: 767px, $max: 1026px) { // (min-width "<-аргумент": 767) and (max-width "<-аргумент": 1026px)
+  @include breakpoint-width($min, $max) {
+    @content;
+  }
+}
+// 
+
+
+// body {
+//   background-color: black;
+// }
+// nav {
+//   background-color: red;
+// }
+
+// div { //x10
+  // @include between-children {
+    // margin-left: 10px;
+  // }
+  // итог все элементы кроме перовго будут с margin (x9)
+// }
+
+// пример использования №1
+// @include breakpoint-width(1920px, 2000px) {
+//   body {
+//     background-color: red;
+//   }
+//   nav {
+//     background-color: black;
+//   }
+// }
+// пример использования №2
+// body {
+//   @include breakpoint-width(1920px, 2000px) {
+//     background-color: black;
+//   }
+// }
+// nav {
+//   @include breakpoint-width(1920px, 2000px) {
+//     background-color: red;
+//   }
+// }
+
+
+// эквивалентность записей на старый лад
+// @media screen and (min-width: 1920px) and (max-width: 2000px) {
+//   body {
+//     background-color: red;
+//   }
+// }
