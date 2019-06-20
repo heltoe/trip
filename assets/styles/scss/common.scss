@@ -1,0 +1,29 @@
+@import "mixins.scss";
+
+.wrapeer {
+  width: 100%;
+  max-width: 960px;
+  max-width: 720px;
+  max-width: 540px;
+}
+
+@include largeTable {
+  .wrapeer {
+    max-width: 1140px;
+  }
+}
+@include table {
+  .wrapeer {
+    max-width: 960px;
+  }
+}
+@include smallTable {
+  .wrapeer {
+    max-width: 720px;
+  }
+}
+@include mobile {
+  .wrapeer {
+    max-width: 540px;
+  }
+}
