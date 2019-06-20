@@ -1,28 +1,19 @@
 .wrapper {
   width: 100%;
   margin: 0 auto;
-  background-color: black;
-}
+  background-color: black; }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .wrapper {
-    max-width: 1140px;
-  }
-}
+    max-width: 1140px; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .wrapper {
-    max-width: 960px;
-  }
-}
+    max-width: 960px; } }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .wrapper {
-    max-width: 720px;
-  }
-}
+    max-width: 720px; } }
 @media only screen and (min-width: 0) and (max-width: 575px) {
   .wrapper {
-    max-width: 540px;
-  }
-}
+    max-width: 540px; } }
 
 /*# sourceMappingURL=index.css.map */
