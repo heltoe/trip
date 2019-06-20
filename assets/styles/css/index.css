@@ -1,14 +1,3 @@
-body {
-  background-color: #535353;
-}
-body .some {
-  background: red;
-}
-body .some:hover {
-  background: yellow;
-}
-body p {
-  background: green;
-}
+
 
 /*# sourceMappingURL=index.css.map */
