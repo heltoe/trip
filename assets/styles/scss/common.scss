@@ -1,29 +1,28 @@
 @import "mixins.scss";
 
-.wrapeer {
+.wrapper {
   width: 100%;
-  max-width: 960px;
-  max-width: 720px;
-  max-width: 540px;
+  margin: 0 auto;
+  background-color: black;
 }
 
 @include largeTable {
-  .wrapeer {
+  .wrapper {
     max-width: 1140px;
   }
 }
 @include table {
-  .wrapeer {
+  .wrapper {
     max-width: 960px;
   }
 }
 @include smallTable {
-  .wrapeer {
+  .wrapper {
     max-width: 720px;
   }
 }
 @include mobile {
-  .wrapeer {
+  .wrapper {
     max-width: 540px;
   }
 }
