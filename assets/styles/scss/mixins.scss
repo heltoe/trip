@@ -17,22 +17,22 @@
   }
 }
 // обертки над миксином брекпоинта
-@mixin bigTable($min: 1200px) { // (min-width "<-аргумент": 960) and (max-width "<-аргумент": 1140px)
+@mixin bigTable($max: 1200px) {
+  @include breakpoint-width($max) {
+    @content;
+  }
+}
+@mixin largeTable($min: 992px, $max: 1201px) { // (min-width "<-аргумент": 960) and (max-width "<-аргумент": 1140px)
   @include breakpoint-width($min, $max) {
     @content;
   }
 }
-@mixin largeTable($min: 992px, $max: 1200px) { // (min-width "<-аргумент": 960) and (max-width "<-аргумент": 1140px)
+@mixin table($min: 768px, $max: 993px) {
   @include breakpoint-width($min, $max) {
     @content;
   }
 }
-@mixin table($min: 768px, $max: 992px) {
-  @include breakpoint-width($min, $max) {
-    @content;
-  }
-}
-@mixin smallTable($min: 576px, $max: 768px) {
+@mixin smallTable($min: 576px, $max: 769px) {
   @include breakpoint-width($min, $max) {
     @content;
   }

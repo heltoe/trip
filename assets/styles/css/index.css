@@ -1,19 +1,149 @@
+.absolute-nav {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px 0;
+}
+
+.navigation-links {
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding: 10px 13px;
+}
+@media only screen and (min-width: 0) and (max-width: 1024px) {
+  .navigation-links {
+    font-size: 15px;
+  }
+}
+
+.navigation-phone {
+  letter-spacing: 1px;
+}
+
+.logo {
+  font-size: 34px;
+}
+@media only screen and (min-width: 0) and (max-width: 1024px) {
+  .logo {
+    font-size: 26px;
+  }
+}
+
+.mobile-navigation {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
-  background-color: black; }
+  padding: 0 15px;
+}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) {
   .wrapper {
-    max-width: 1140px; } }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .wrapper {
-    max-width: 960px; } }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .wrapper {
-    max-width: 720px; } }
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .wrapper {
+    max-width: 540px;
+  }
+}
 @media only screen and (min-width: 0) and (max-width: 575px) {
   .wrapper {
-    max-width: 540px; } }
+    max-width: 100%;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.white {
+  color: #fff;
+}
+
+.lightGrey {
+  color: #ddd;
+}
+
+.darkGrey {
+  color: #707579;
+}
+
+.darkBlue {
+  color: #323648;
+}
+
+.orange {
+  color: #da9d40;
+}
+
+.black {
+  color: #333;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.medium {
+  font-weight: 400;
+}
+
+.normal {
+  font-weight: 600;
+}
+
+.hard {
+  font-weight: 700;
+}
+
+.shadow {
+  box-shadow: 3px 4px 6px rgba(45, 45, 45, 0.15);
+}
+
+.hero {
+  background-color: #fafafa;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=index.css.map */

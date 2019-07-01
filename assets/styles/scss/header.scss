@@ -1,0 +1,34 @@
+.absolute-nav {
+  position: absolute;
+  background: rgba(black, 0.5);
+  width: 100%;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px 0;
+}
+.navigation-links {
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding: 10px 13px;
+  @include breakpoint-width(0, 1025px) {
+    font-size: 15px;
+  }
+}
+.navigation-phone {
+  letter-spacing: 1px;
+}
+.logo {
+  font-size: 34px;
+  @include breakpoint-width(0, 1025px) {
+    font-size: 26px;
+  }
+}
+
+.mobile-navigation {
+  display: none;
+}

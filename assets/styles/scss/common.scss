@@ -1,27 +1,93 @@
+@import "colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 // основная оболочка проекта
 .wrapper {
   width: 100%;
   margin: 0 auto;
-  background-color: black;
+  padding: 0 15px;
 }
-
-@include largeTable {
+@include bigTable {
   .wrapper {
     max-width: 1140px;
   }
 }
-@include table {
+@include largeTable {
   .wrapper {
     max-width: 960px;
   }
 }
-@include smallTable {
+@include table {
   .wrapper {
     max-width: 720px;
   }
 }
-@include mobile {
+@include smallTable {
   .wrapper {
     max-width: 540px;
   }
+}
+@include mobile {
+  .wrapper {
+    max-width: 100%;
+  }
+}
+
+// общие стили
+a {
+  text-decoration: none;
+}
+// цветовая гамма
+.white {
+  color: $white;
+}
+.lightGrey {
+  color: $lightGrey;
+}
+.darkGrey {
+  color: $darkGrey;
+}
+.darkBlue {
+  color: $darkBlue;
+}
+.orange {
+  color: $orange;
+}
+.black {
+  color: $black;
+}
+// регистр текста 
+.upperCase {
+  text-transform: uppercase;
+}
+// размер шрифтов
+.light {
+  font-weight: 200;
+}
+.medium{
+  font-weight: 400;
+}
+.normal {
+  font-weight: 600;
+}
+.hard {
+  font-weight: 700;
+}
+// тень 
+.shadow {
+  box-shadow: 3px 4px 6px rgba(45, 45, 45, 0.15);
 }
