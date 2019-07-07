@@ -1,9 +1,13 @@
-@import "colors.scss";
+@import "constants.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: 'Webfont', sans-serif;
 }
 
 body, html {
@@ -78,7 +82,7 @@ a {
 .light {
   font-weight: 200;
 }
-.medium{
+.medium {
   font-weight: 400;
 }
 .normal {
@@ -90,4 +94,10 @@ a {
 // тень 
 .shadow {
   box-shadow: 3px 4px 6px rgba(45, 45, 45, 0.15);
+}
+// общий стиль для фона
+.div-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
