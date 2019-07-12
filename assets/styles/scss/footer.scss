@@ -1,0 +1,134 @@
+@import "constants.scss";
+
+.footer {
+  background-color: black;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0 47px;
+}
+.footer-slogan {
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  max-width: 290px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 730px;
+  padding: 16px 0;
+}
+.footer-socials {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  @include between-children {
+    margin-left: 24px;
+  }
+}
+.footer-navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 16px;
+  @include between-children {
+    margin-left: 16px;
+  }
+}
+.footer-icon {
+  display: flex;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  background-size: contain !important;
+  cursor: pointer;
+}
+.facebook {
+  background-image: url('../../images/socials/fb.svg');
+}
+.twitter {
+  background-image: url('../../images/socials/tw.svg');
+}
+.google {
+  background-image: url('../../images/socials/google.svg');
+}
+.instagram {
+  background-image: url('../../images/socials/inst.svg');
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #222;
+  cursor: pointer;
+}
+.footer-text {
+  font-size: 17px;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+.footer-link {
+  transition: 0.3s ease-in-out;
+  &:hover {
+    color: $lightGrey;
+  }
+}
+
+@include breakpoint-width(0, 1000px) {
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-socials,
+  .footer-navigation {
+    justify-content: center;
+  }
+  .footer-slogan {
+    margin: 0 auto;
+  }
+}
+
+@include breakpoint-width(0, 550px) {
+  .footer-navigation {
+    flex-direction: column;
+    @include between-children {
+      margin-left: 0;
+    }
+  }
+  .footer-helper {
+    font-size: 10px
+  }
+}
+
+@include largeTable {
+  .footer-slogan {
+    font-size: 34px;
+  }
+}
+
+@include table {
+  .footer-slogan {
+    font-size: 30px;
+  }
+}
+
+@include smallTable {
+  .footer-slogan {
+    font-size: 27px;
+  }
+}
+
+@include mobile {
+  .footer-slogan {
+    font-size: 24px;
+  }
+}

@@ -78,6 +78,10 @@ a {
 .upperCase {
   text-transform: uppercase;
 }
+// 
+.center {
+  text-align: center;
+}
 // размер шрифтов
 .light {
   font-weight: 200;
@@ -100,4 +104,14 @@ a {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+// костыли и аномалия.. омайва
+.footer-slogan {
+  text-align: left
+}
+
+@include breakpoint-width(0, 1000px) {
+  .footer-slogan {
+    text-align: center;
+  }
 }

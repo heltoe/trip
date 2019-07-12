@@ -1,4 +1,4 @@
-let burger = document.getElementById('burger');
+const burger = document.getElementById('burger');
 
 function isActiveMenu() {
   const menu = document.querySelector('.mobile-wrapper__links');
