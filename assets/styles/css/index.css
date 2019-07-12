@@ -496,5 +496,10 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+.example {
+  background: black;
+  width: 500px;
+  height: 500px;
+}
 
 /*# sourceMappingURL=index.css.map */
