@@ -1,5 +1,32 @@
-.example {
-  background: black;
-  width: 500px;
-  height: 500px;
+.container-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin: 40px 0 40px ; 
+}
+
+.left-container {
+  padding: 3em 0.5em;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  background: #f8f9fa;
+  box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
+  position: relative;
+}
+
+.title-box {
+  letter-spacing: 1px;
+  color: $darkBlue
+}
+
+.text-box {
+  color: $darkGrey;
+}
+.image-box {
+  width: 50%;
+  background-image: url('../../images/1.jpg');
 }
