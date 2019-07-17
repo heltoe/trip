@@ -45,8 +45,8 @@
 }
 .image-box {
   display: flex;
-  height: 680px;
-  width: 540px;
+  width: 50%;
+  height: 100%;
   background-image: url('../../images/1.jpg');
 }
 
@@ -61,7 +61,10 @@
 
 .icon-container {
   margin: 0 auto;
-  background-image: url('/trip/assets/images/socials/settings.svg');
+  background-size: contain;
   width: 48px;
   height: 48px;
+}
+.settings {
+  background-image: url('../../images/socials/settings.svg');
 }
