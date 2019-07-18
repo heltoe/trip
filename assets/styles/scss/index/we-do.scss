@@ -50,14 +50,9 @@
   margin: 16px 0;
   letter-spacing: 1px;
   color: $darkBlue;
-  font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
 }
 
-.text-box {
-  color: $darkGrey;
-  font-size: 1.2em;
-}
 .image-box {
   display: flex;
   width: 50%;
@@ -68,8 +63,7 @@
   font-size: 17px;
   line-height: 34px;
   letter-spacing: 1px;
-  color: #707579;
-  font-family: 'Source Sans Pro', sans-serif;
+  color: $darkGrey;
 }
 
 .icon-container {

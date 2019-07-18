@@ -1,5 +1,37 @@
-.stats {
-  background-image: url(//trip/assets/images/banner4.jpg) center;
-  background-size: cover;
-  position: relative;
+@import "../constants.scss";
+@import "../common.scss";
+
+.container-stats {
+  background-image: url('../../images/banner4.jpg');
+}
+.stats-grids {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+}
+.title-stats {
+  display: flex;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+.span-text {
+  font-size: 24px;
+}
+.text-stats {
+  font-size: 17px;
+  line-height: 34px;
+  letter-spacing: 1px;
+}
+.left-stats {
+  width: 50%;
+}
+.right-stats-title {
+  padding: 15px; 
+}
+.right-h4 {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 15px 0;
+  color: #fff;
 }
