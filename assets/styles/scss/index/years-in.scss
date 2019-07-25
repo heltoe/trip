@@ -3,10 +3,9 @@
 
 .container-stats {
   background-image: url('../../images/banner4.jpg');
+  padding: 72px 0;
 }
 .stats-grids {
-  padding-top: 48px;
-  padding-bottom: 48px;
   display: flex;
 }
 .title-stats {
@@ -34,4 +33,20 @@
   font-weight: 700;
   margin: 15px 0;
   color: #fff;
+}
+.circle {
+  font-size: 20px;
+  background: rgb(248, 249, 250);
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+  border-radius: 50% 
+}
+.icon-stats {
+  margin: 0 auto;
+  background-size: contain;
+}
+.people {
+  background-image: url('../../images/socials/users.svg');
 }

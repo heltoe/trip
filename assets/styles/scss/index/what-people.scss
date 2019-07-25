@@ -1,0 +1,46 @@
+@import "../constants.scss";
+@import "../common.scss";
+@import "./we-do.scss";
+
+.what-people-color {
+  background-color: #f5f5f5;
+}
+.what-people {
+  padding: 48px;
+}
+
+.people-container {
+  width: 100%;
+  padding: 15px; 
+}
+
+.l-container {
+  background-color: $white;
+  margin-left: 15px;
+  padding: 48px;
+}
+
+.r-container {
+  background-color: $white;
+  margin-right: 15px;
+  padding: 48px;
+}
+
+.comment {
+  font-size: 17px;
+  font-style: italic;
+}
+
+.name {
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+
+.people-Description {
+  font-size: 13px;
+}
+
+.comment-img {
+  display: flex;
+  box-sizing: border-box;
+}
