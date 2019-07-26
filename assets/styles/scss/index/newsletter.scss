@@ -1,0 +1,44 @@
+@import "../constants.scss";
+@import "../common.scss";
+@import "./we-do.scss";
+@import "./what-people.scss";
+
+.email-container {
+ padding: 48px;
+}
+
+.email-block {
+  display: flex;
+  padding-top: 24px;
+}
+.email-input {
+  padding: 10px 5px;
+  font-size: 15px;
+  color: #666;
+  outline: none;
+  letter-spacing: 2px;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.email-button {
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 13px 0;
+  border: transparent;
+  background: #da9d40;
+  border: 2px solid #da9d40;
+  flex-basis: 35%;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.email-text {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
