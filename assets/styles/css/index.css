@@ -248,6 +248,8 @@ a {
   text-decoration: none; }
 
 .img-radius {
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   max-width: 88px; }
 
@@ -448,7 +450,8 @@ a {
 
 .image-box {
   display: flex;
-  width: 50%; }
+  width: 50%;
+  object-fit: cover; }
 
 .text-box {
   text-align: center;
@@ -537,6 +540,8 @@ a {
   text-decoration: none; }
 
 .img-radius {
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   max-width: 88px; }
 
@@ -693,6 +698,8 @@ a {
   text-decoration: none; }
 
 .img-radius {
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   max-width: 88px; }
 
@@ -825,6 +832,8 @@ a {
   text-decoration: none; }
 
 .img-radius {
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   max-width: 88px; }
 
@@ -939,7 +948,8 @@ a {
 
 .image-box {
   display: flex;
-  width: 50%; }
+  width: 50%;
+  object-fit: cover; }
 
 .text-box {
   text-align: center;
@@ -1010,7 +1020,10 @@ a {
   margin-top: 20px; }
 
 .comment-name {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   margin-left: 15px; }
 
 .comment {
@@ -1019,10 +1032,13 @@ a {
 
 .name {
   letter-spacing: 1px;
-  font-size: 17px; }
+  font-size: 17px;
+  line-height: 1; }
 
 .people-Description {
-  font-size: 13px; }
+  font-size: 13px;
+  line-height: 1;
+  margin-top: 10px; }
 
 @media only screen and (min-width: 0px) and (max-width: 999px) {
   .container-say:first-child {
@@ -1073,6 +1089,8 @@ a {
   text-decoration: none; }
 
 .img-radius {
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   max-width: 88px; }
 
@@ -1187,7 +1205,8 @@ a {
 
 .image-box {
   display: flex;
-  width: 50%; }
+  width: 50%;
+  object-fit: cover; }
 
 .text-box {
   text-align: center;
@@ -1276,6 +1295,8 @@ a {
   text-decoration: none; }
 
 .img-radius {
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   max-width: 88px; }
 
@@ -1390,7 +1411,8 @@ a {
 
 .image-box {
   display: flex;
-  width: 50%; }
+  width: 50%;
+  object-fit: cover; }
 
 .text-box {
   text-align: center;
@@ -1461,7 +1483,10 @@ a {
   margin-top: 20px; }
 
 .comment-name {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   margin-left: 15px; }
 
 .comment {
@@ -1470,10 +1495,13 @@ a {
 
 .name {
   letter-spacing: 1px;
-  font-size: 17px; }
+  font-size: 17px;
+  line-height: 1; }
 
 .people-Description {
-  font-size: 13px; }
+  font-size: 13px;
+  line-height: 1;
+  margin-top: 10px; }
 
 @media only screen and (min-width: 0px) and (max-width: 999px) {
   .container-say:first-child {

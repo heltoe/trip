@@ -24,12 +24,15 @@
 }
 
 .comment-img {
-display: flex;
-margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 
 .comment-name {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   margin-left: 15px;
 }
 .comment {
@@ -40,10 +43,14 @@ margin-top: 20px;
 .name {
   letter-spacing: 1px;
   font-size: 17px;
+  // временно
+  line-height: 1;
 }
 
 .people-Description {
   font-size: 13px;
+  line-height: 1;
+  margin-top: 10px;
 }
 
 @include breakpoint-width (0px, 1000px){
