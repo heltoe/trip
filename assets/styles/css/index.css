@@ -411,7 +411,8 @@ a {
   justify-content: center;
   font-size: 40px;
   letter-spacing: 1px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-align: center; }
 
 .box-container {
   display: flex; }
@@ -901,7 +902,8 @@ a {
   justify-content: center;
   font-size: 40px;
   letter-spacing: 1px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-align: center; }
 
 .box-container {
   display: flex; }
@@ -991,21 +993,17 @@ a {
   background-color: #f5f5f5; }
 
 .what-people {
-  padding: 48px; }
+  padding: 48px 0; }
 
 .people-container {
   width: 100%;
-  padding: 15px; }
+  padding: 15px 0; }
 
-.l-container {
+.container-say {
   background-color: #fff;
-  margin-left: 15px;
   padding: 48px; }
-
-.r-container {
-  background-color: #fff;
-  margin-right: 15px;
-  padding: 48px; }
+  .container-say:first-child {
+    margin-right: 30px; }
 
 .comment-img {
   display: flex;
@@ -1026,6 +1024,16 @@ a {
 .people-Description {
   font-size: 13px; }
 
+@media only screen and (min-width: 0px) and (max-width: 999px) {
+  .container-say:first-child {
+    margin-right: 0px;
+    margin-bottom: 30px; } }
+@media only screen and (min-width: 0px) and (max-width: 565px) {
+  .people-container {
+    padding: 0 10px; } }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .what-people {
+    padding: 48px 15px; } }
 * {
   margin: 0;
   padding: 0;
@@ -1142,7 +1150,8 @@ a {
   justify-content: center;
   font-size: 40px;
   letter-spacing: 1px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-align: center; }
 
 .box-container {
   display: flex; }
@@ -1344,7 +1353,8 @@ a {
   justify-content: center;
   font-size: 40px;
   letter-spacing: 1px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-align: center; }
 
 .box-container {
   display: flex; }
@@ -1434,21 +1444,17 @@ a {
   background-color: #f5f5f5; }
 
 .what-people {
-  padding: 48px; }
+  padding: 48px 0; }
 
 .people-container {
   width: 100%;
-  padding: 15px; }
+  padding: 15px 0; }
 
-.l-container {
+.container-say {
   background-color: #fff;
-  margin-left: 15px;
   padding: 48px; }
-
-.r-container {
-  background-color: #fff;
-  margin-right: 15px;
-  padding: 48px; }
+  .container-say:first-child {
+    margin-right: 30px; }
 
 .comment-img {
   display: flex;
@@ -1469,6 +1475,16 @@ a {
 .people-Description {
   font-size: 13px; }
 
+@media only screen and (min-width: 0px) and (max-width: 999px) {
+  .container-say:first-child {
+    margin-right: 0px;
+    margin-bottom: 30px; } }
+@media only screen and (min-width: 0px) and (max-width: 565px) {
+  .people-container {
+    padding: 0 10px; } }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .what-people {
+    padding: 48px 15px; } }
 .email-container {
   padding: 48px; }
 
@@ -1483,12 +1499,7 @@ a {
   outline: none;
   letter-spacing: 2px;
   border: none;
-  border-bottom: 1px solid #333;
-  flex-basis: 70%;
-  margin-right: 3%;
-  font-style: italic;
-  font-weight: 600;
-  background: none; }
+  border-bottom: 1px solid #333; }
 
 .email-button {
   color: #fff;
@@ -1500,8 +1511,6 @@ a {
   background: #da9d40;
   border: 2px solid #da9d40;
   flex-basis: 35%;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
   transition: 0.5s all;
   cursor: pointer; }
 
