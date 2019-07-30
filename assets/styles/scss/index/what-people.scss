@@ -6,8 +6,19 @@
 .what-people-color {
   background-color: #f5f5f5;
 }
+
 .what-people {
   padding: 48px 0;
+}
+
+.what-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .people-container {
@@ -35,6 +46,7 @@
   align-items: flex-start;
   margin-left: 15px;
 }
+
 .comment {
   font-size: 17px;
   font-style: italic;
@@ -69,6 +81,26 @@
 
 @include breakpoint-width (0px, 576px){
   .what-people {
-    padding: 48px 15px;
+    padding: 24px 15px;
+  }
+  .what-title {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .container-say {
+    padding: 24px;
+  }
+}
+
+@include breakpoint-width (0px, 460px){
+  .comment-img {
+    display: inline-block;
+    margin: auto;
+  }
+  .comment {
+    font-size: 13px;
+  }
+  .comment-name {
+    padding: 10px;
   }
 }
