@@ -1,7 +1,4 @@
 @import "../constants.scss";
-@import "../common.scss";
-@import "./we-do.scss";
-@import "../mixins.scss";
 
 .what-people-color {
   background-color: #f5f5f5;
@@ -55,7 +52,6 @@
 .name {
   letter-spacing: 1px;
   font-size: 17px;
-  // временно
   line-height: 1;
 }
 

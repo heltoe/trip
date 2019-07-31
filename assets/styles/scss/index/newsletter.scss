@@ -1,10 +1,7 @@
 @import "../constants.scss";
-@import "../common.scss";
-@import "./we-do.scss";
-@import "./what-people.scss";
 
 .email-container {
- padding: 48px 0;
+  padding: 48px 0;
 }
 
 .email-block {
@@ -18,30 +15,26 @@
 }
 .email-input {
   height: 54px;
+  margin-right: 3%;
   padding: 10px 5px;
   font-size: 15px;
   color: #666;
-  outline: none;
+  font-style: italic;
   letter-spacing: 2px;
   border: none;
   border-bottom: 1px solid #333;
-  margin-right: 3%;
-  font-style: italic;
-  font-weight: 600;
   background: none;
+  outline: none; // для отмены выделения при нажатии
 }
 
 .email-button {
   height: 54px;
-  color: #fff;
+  color: $white;
   font-size: 16px;
-  text-transform: capitalize;
   letter-spacing: 1px;
   padding: 16px 30px;
-  border: transparent;
   background: #da9d40;
   border: 2px solid #da9d40;
-  transition: 0.5s all;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -49,10 +42,7 @@
 .email-text {
   position: relative;
   width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  // text-align: center;
+  padding: 0 15px;
 }
 
 @include breakpoint-width (0px, 769px) {
@@ -67,6 +57,9 @@
 }
 
 @include breakpoint-width (0px, 440px) {
+  .email-container {
+    padding: 48px 10;
+  }
   .input-button {
     flex-direction: column;
   }

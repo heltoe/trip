@@ -1,5 +1,4 @@
 @import "../constants.scss";
-@import "../common.scss";
 
 .container-stats {
   background-image: url('../../images/banner4.jpg');
@@ -42,9 +41,7 @@
 
 .right-h4 {
   font-size: 38px;
-  font-weight: 700;
   margin: 15px 0;
-  color: #fff;
 }
 
 .circle {
@@ -54,7 +51,7 @@
   height: 65px;
   text-align: center;
   line-height: 65px;
-  border-radius: 50% 
+  border-radius: 50%;
 }
 
 .icon-stats {
@@ -99,7 +96,6 @@
     padding: 24px;
   }
   .right-h4 {
-  font-size: 30px;
-  font-weight: 700;
+    font-size: 30px;
   }
 }

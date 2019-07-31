@@ -1,11 +1,10 @@
 @import "../constants.scss";
-@import "../common.scss";
 
 .ready-title {
-  font-size: 40px;
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: 40px;
 }
 
 .ready-text {
@@ -18,20 +17,21 @@
 }
 
 .ready-button {
-  margin: 0 auto;
   display: flex;
   font-size: 15px;
-  color: #ffffff;
+  color: $white;
   letter-spacing: 1px;
   background-color: #da9d40;
-  padding: 8px 15px;
   border: 2px solid #da9d40;
   transition: 0.3s ease-in-out;
   outline: none;
+  margin: 0 auto;
+  padding: 8px 15px;
   cursor: pointer;
   &:hover {
     background-color: $white;
-    color: $orange;}
+    color: $orange;
+  }
 }
 
 @include breakpoint-width (0, 845px) {
