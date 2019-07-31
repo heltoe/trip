@@ -367,7 +367,7 @@ a {
 
 @media only screen and (min-width: 1200px) {
   .main-hero {
-    min-height: 85vh; }
+    min-height: 100vh; }
 
   .hero-title {
     font-size: 53px; }
@@ -376,7 +376,7 @@ a {
     font-size: 24px; } }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .main-hero {
-    min-height: 70vh; }
+    min-height: 80vh; }
 
   .hero-title {
     font-size: 43px; }
@@ -385,7 +385,7 @@ a {
     font-size: 22px; } }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .main-hero {
-    min-height: 55vh; }
+    min-height: 60vh; }
 
   .hero-title {
     font-size: 36px;
@@ -395,7 +395,7 @@ a {
     font-size: 20px; } }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .main-hero {
-    min-height: 40vh; }
+    min-height: 50vh; }
 
   .hero-title {
     font-size: 29px;
@@ -405,7 +405,7 @@ a {
     font-size: 18px; } }
 @media only screen and (min-width: 0) and (max-width: 575px) {
   .main-hero {
-    min-height: 30vh; }
+    min-height: 40vh; }
 
   .hero-title {
     line-height: 34px;

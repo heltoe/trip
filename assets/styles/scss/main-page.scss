@@ -52,7 +52,7 @@
 
 @include bigTable {
   .main-hero {
-    min-height: 85vh;
+    min-height: 100vh;
   }
   .hero-title {
     font-size: 53px;
@@ -63,7 +63,7 @@
 }
 @include largeTable {
   .main-hero {
-    min-height: 70vh;
+    min-height: 80vh;
   }
   .hero-title {
     font-size: 43px;
@@ -74,7 +74,7 @@
 }
 @include table {
   .main-hero {
-    min-height: 55vh;
+    min-height: 60vh;
   }
   .hero-title {
     font-size: 36px;
@@ -86,7 +86,7 @@
 }
 @include smallTable {
   .main-hero {
-    min-height: 40vh;
+    min-height: 50vh;
   }
   .hero-title {
     font-size: 29px;
@@ -98,7 +98,7 @@
 }
 @include mobile {
   .main-hero {
-    min-height: 30vh;
+    min-height: 40vh;
   }
   .hero-title {
     line-height: 34px;
