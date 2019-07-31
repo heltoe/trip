@@ -144,6 +144,7 @@
   letter-spacing: 1px;
   margin-right: 10px;
   max-width: 290px;
+  text-align: left;
 }
 
 .footer-links {
@@ -234,6 +235,7 @@
 
   .footer-slogan {
     margin: 0 auto;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 0) and (max-width: 549px) {
@@ -408,15 +410,6 @@ a {
   background-repeat: no-repeat;
 }
 
-.footer-slogan {
-  text-align: left;
-}
-
-@media only screen and (min-width: 0) and (max-width: 999px) {
-  .footer-slogan {
-    text-align: center;
-  }
-}
 .main-hero {
   display: flex;
   flex-direction: column;
