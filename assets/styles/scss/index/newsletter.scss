@@ -52,5 +52,23 @@
   padding-left: 15px;
 }
 @include breakpoint-width (0px, 769px) {
-  
+  .email-block {
+    flex-direction: column;
+  }
+  .input-button {
+    padding-top: 20px;
+    justify-content: center;
+  }
+  .email-input {
+    flex-basis: 40%;
+  }
+}
+
+@include breakpoint-width (0px, 350px) {
+  .input-button {
+    flex-direction: column;
+  }
+  .email-input {
+    flex-basis: 20%;
+  }
 }
