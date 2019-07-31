@@ -57,6 +57,7 @@
 .image-box {
   display: flex;
   width: 50%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -117,7 +118,7 @@
   }
 }
 
-@include smallTable {
+@include breakpoint-width (0px, 1000px) {
   .left-container__block {
     width: 100%;
     &:not(:last-child) {
