@@ -3,7 +3,8 @@
 .main-hero {
   background-color: #fafafa;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,9 +52,6 @@
 }
 
 @include bigTable {
-  .main-hero {
-    min-height: 100vh;
-  }
   .hero-title {
     font-size: 53px;
   }
@@ -62,9 +60,6 @@
   }
 }
 @include largeTable {
-  .main-hero {
-    min-height: 80vh;
-  }
   .hero-title {
     font-size: 43px;
   }
@@ -73,9 +68,6 @@
   }
 }
 @include table {
-  .main-hero {
-    min-height: 60vh;
-  }
   .hero-title {
     font-size: 36px;
     line-height: 34px;
@@ -85,9 +77,6 @@
   }
 }
 @include smallTable {
-  .main-hero {
-    min-height: 50vh;
-  }
   .hero-title {
     font-size: 29px;
     line-height: 34px;
@@ -97,9 +86,6 @@
   }
 }
 @include mobile {
-  .main-hero {
-    min-height: 40vh;
-  }
   .hero-title {
     line-height: 34px;
     font-size: 22px;

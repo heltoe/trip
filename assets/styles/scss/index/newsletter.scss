@@ -9,11 +9,11 @@
 
 .email-block {
   display: flex;
-  padding-top: 24px;
 }
 .input-button {
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   width: 100%;
 }
 .email-input {
@@ -52,7 +52,7 @@
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  text-align: center;
+  // text-align: center;
 }
 
 @include breakpoint-width (0px, 769px) {

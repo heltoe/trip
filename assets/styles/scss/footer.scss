@@ -87,6 +87,7 @@
 @include breakpoint-width(0, 1000px) {
   .footer-top {
     flex-direction: column;
+    align-items: center;
   }
   .footer-socials,
   .footer-navigation {

@@ -47,6 +47,7 @@
   width: 40px;
   height: 40px;
   background-color: $orange;
+  margin-left: auto;
   cursor: pointer;
   span {
     display: flex;
@@ -78,9 +79,8 @@
 
 .mobile-navigation {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .mobile-wrapper__links {
