@@ -65,7 +65,7 @@
   margin-top: 10px;
 }
 
-@include breakpoint-width (0px, 1000px){
+@include breakpoint-width (0px, 1000px) {
   .container-say {
     &:first-child {
       margin-right: 0px;
@@ -73,13 +73,14 @@
     }
   }
 }
-@include breakpoint-width (0px, 566px){
+
+@include breakpoint-width (0px, 566px) {
   .people-container {
     padding: 0 10px;
   }
 }
 
-@include breakpoint-width (0px, 576px){
+@include breakpoint-width (0px, 576px) {
   .what-people {
     padding: 24px 15px;
   }
@@ -92,7 +93,7 @@
   }
 }
 
-@include breakpoint-width (0px, 460px){
+@include breakpoint-width (0px, 460px) {
   .comment-img {
     display: inline-block;
     margin: auto;

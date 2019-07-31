@@ -90,6 +90,7 @@
 .coubs {
   background-image: url('../../images/socials/cubes.svg')
 }
+
 @include breakpoint-width (0px, 1000px) {
   .box-container {
     flex-direction: column;
@@ -103,6 +104,7 @@
     height: 100%;
   }
 }
+
 @include breakpoint-width (500px, 1000px) {
   .left-container__block {
     width: calc(50% - 15px);
@@ -114,7 +116,8 @@
     }
   }
 }
-@include breakpoint-width (0px, 550px) {
+
+@include smallTable {
   .left-container__block {
     width: 100%;
     &:not(:last-child) {

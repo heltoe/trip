@@ -25,26 +25,31 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 @include bigTable {
   .wrapper {
     max-width: 1140px;
   }
 }
+
 @include largeTable {
   .wrapper {
     max-width: 960px;
   }
 }
+
 @include table {
   .wrapper {
     max-width: 720px;
   }
 }
+
 @include smallTable {
   .wrapper {
     max-width: 540px;
   }
 }
+
 @include mobile {
   .wrapper {
     max-width: 100%;
@@ -55,6 +60,7 @@ body {
 a {
   text-decoration: none;
 }
+
 // стили изображений
 .img-radius {
   width: 88px;
@@ -67,54 +73,70 @@ a {
 .white {
   color: $white;
 }
+
 .what {
 background-color: #f5f5f5;
 }
+
 .darkwhite {
   color: #ccc;
 }
+
 .lightGrey {
   color: $lightGrey;
 }
+
 .darkGrey {
   color: $darkGrey;
 }
+
 .darkBlue {
   color: $darkBlue;
 }
+
 .orange {
   color: $orange;
 }
+
 .black {
   color: $black;
 }
+
 // регистр текста 
 .upperCase {
   text-transform: uppercase;
 }
+
 // 
 .center {
   text-align: center;
 }
+
 // размер шрифтов
 .light {
   font-weight: 200;
 }
+
 .medium {
   font-weight: 400;
 }
+
 .normal {
   font-weight: 600;
 }
+
 .hard {
   font-weight: 700;
 }
+
 .sizeMin {
   font-size: 24px;
 }
+
 .sizeNormal {
   font-size: 50px;
 }
+
 // тень 
 .shadow {
   box-shadow: 3px 4px 6px rgba(45, 45, 45, 0.15);
@@ -123,12 +145,14 @@ background-color: #f5f5f5;
 .shadow2 {
   box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
 }
+
 // общий стиль для фона
 .div-img {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 // костыли и аномалия.. омайва
 .footer-slogan {
   text-align: left

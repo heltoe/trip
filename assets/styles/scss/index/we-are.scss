@@ -7,6 +7,7 @@
   justify-content: center;
   text-align: center;
 }
+
 .ready-text {
   margin: 48px 0 24px 0;
   text-align: center;
@@ -15,6 +16,7 @@
   letter-spacing: 1px;
   color: $darkGrey;
 }
+
 .ready-button {
   margin: 0 auto;
   display: flex;
@@ -31,6 +33,7 @@
     background-color: $white;
     color: $orange;}
 }
+
 @include breakpoint-width (0, 845px) {
   .ready-title {
     font-size: 35px;

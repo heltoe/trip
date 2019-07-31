@@ -51,6 +51,7 @@
   padding-right: 15px;
   padding-left: 15px;
 }
+
 @include breakpoint-width (0px, 769px) {
   .email-block {
     flex-direction: column;

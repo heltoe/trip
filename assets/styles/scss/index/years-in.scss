@@ -67,7 +67,7 @@
   background-image: url('../../images/socials/users.svg');
 }
 
-@include breakpoint-width (0, 1000px) {
+@include largeTable {
   .title-stats {
     font-size: 35px;
   }
@@ -95,7 +95,7 @@
     justify-content: center;
   }
 }
-@include breakpoint-width (0, 680px) {
+@include table {
   .container-stats {
     padding: 24px;
   }

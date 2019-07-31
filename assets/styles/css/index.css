@@ -511,7 +511,7 @@ a {
       margin-bottom: 25px; }
     .left-container__block:nth-child(4) {
       margin-bottom: 25px; } }
-@media only screen and (min-width: 0px) and (max-width: 549px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .left-container__block {
     width: 100%; }
     .left-container__block:not(:last-child) {
@@ -679,7 +679,7 @@ a {
 .people {
   background-image: url("../../images/socials/users.svg"); }
 
-@media only screen and (min-width: 0) and (max-width: 999px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .title-stats {
     font-size: 35px; }
 
@@ -703,7 +703,7 @@ a {
   .main-right-stats {
     display: flex;
     justify-content: center; } }
-@media only screen and (min-width: 0) and (max-width: 679px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .container-stats {
     padding: 24px; }
 
@@ -1062,7 +1062,7 @@ a {
       margin-bottom: 25px; }
     .left-container__block:nth-child(4) {
       margin-bottom: 25px; } }
-@media only screen and (min-width: 0px) and (max-width: 549px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .left-container__block {
     width: 100%; }
     .left-container__block:not(:last-child) {
@@ -1348,7 +1348,7 @@ a {
       margin-bottom: 25px; }
     .left-container__block:nth-child(4) {
       margin-bottom: 25px; } }
-@media only screen and (min-width: 0px) and (max-width: 549px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .left-container__block {
     width: 100%; }
     .left-container__block:not(:last-child) {
@@ -1554,7 +1554,7 @@ a {
       margin-bottom: 25px; }
     .left-container__block:nth-child(4) {
       margin-bottom: 25px; } }
-@media only screen and (min-width: 0px) and (max-width: 549px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .left-container__block {
     width: 100%; }
     .left-container__block:not(:last-child) {
