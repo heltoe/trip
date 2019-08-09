@@ -1,23 +1,24 @@
 // тут подключать зависимости стилей для главной страницы!
-@import "../constants.scss";
-@import "./natus.scss";
 @import "../index/we-do.scss";
-@import "../common.scss";
 
 .crump {
   background-color: $lightGrey;
   margin-bottom: -15px;
 }
+
 .crump-link {
   display: flex;
   padding: 16px 12px;
 }
+
 .text-crump {
   margin-left: 7px;
 }
+
 .natus-container {
   display: flex
 }
+
 .hero-services {
   display: flex;
   flex-direction: column;
@@ -27,37 +28,90 @@
   background-image: url(../../images/banner1.jpg);
   position: relative;
   padding: 0 10px;
-  }
-  .natus-card {
-    margin: 0 15px;
-  }
-  .natus-icon {
-    display: flex;
-    justify-content: center;
-    height: 40px;
-    margin-top: 96px;
-  }
-  .natus-title {
-    text-align: center;
-    margin: 15px 0;
-    font-size: 22px;
-    letter-spacing: 2px;
-  }
-  .natus-text {
-    text-align: center;
-    font-size: 17px;
-    line-height: 2em;
-    letter-spacing: 1px;
-  }
-  .left-travel-image {
-    background-image: url(../../images/4.jpg);
-    position: relative;
-    padding-top: 350px;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-size: 24px;
-    min-height: 450px;
-  }
-  
+}
+
+.natus-card {
+  margin: 0 15px;
+}
+
+.natus-icon {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  margin-top: 96px;
+}
+
+.natus-title {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.natus-text {
+  text-align: center;
+  font-size: 17px;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.travel-image {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.left-travel-image {
+  background-image: url(../../images/4.jpg);
+  width: 50%;
+  position: relative;
+  padding-top: 350px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 24px;
+  min-height: 450px;
+}
+
+.top-travel-image {
+  background-image: url(../../images/banner3.jpg);
+  padding-top: 170px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 24px;
+  min-height: 250px;
+  min-width: 550px;
+  margin-left: 5px;
+}
+
+.bottom-travel-image {
+  margin: 5px 0px 0px 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-tours {
+  background-image: url(../../images/3.jpg);
+  padding-top: 120px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 22px;
+  min-height: 195px;
+  min-width: 272px;
+  margin-right: 5px;
+}
+
+.bottom-travel {
+  background-image: url(../../images/banner4.jpg);
+  padding-top: 120px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 22px;
+  min-height: 195px;
+  min-width: 273px;
+}
