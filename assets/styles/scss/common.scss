@@ -137,7 +137,9 @@ a {
 .sizeNormal {
   font-size: 50px;
 }
-
+.letter {
+letter-spacing: 5px;
+}
 // тень 
 .shadow {
   box-shadow: 3px 4px 6px rgba(45, 45, 45, 0.15);

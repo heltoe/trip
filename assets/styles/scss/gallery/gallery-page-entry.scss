@@ -1,0 +1,37 @@
+.gallery-title {
+	font-size: 32px;
+	letter-spacing: 1px;
+	margin: 72px 0 48px 0;
+	text-align: center;
+	color: $darkBlue;
+}
+
+.gallery-image-top {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+.image-g {
+	max-width: 265px;
+}
+
+.gallery-image {
+	max-width: 265px;
+	margin: 5px;
+}
+
+h5 {
+	letter-spacing: 1px;
+	font-size: 20px;
+	margin-top: 15px;
+	color: $darkBlue;
+}
+
+.text-gallery {
+  font-size: 17px;
+  line-height: 34px;
+  letter-spacing: 1px;
+	color: $darkGrey;
+	margin: 15px 0 32px 0;
+}

@@ -15,10 +15,6 @@
   margin-left: 7px;
 }
 
-.natus-container {
-  display: flex
-}
-
 .hero-services {
   display: flex;
   flex-direction: column;
@@ -28,6 +24,10 @@
   background-image: url(../../images/banner1.jpg);
   position: relative;
   padding: 0 10px;
+}
+
+.natus-container {
+  display: flex
 }
 
 .natus-card {
@@ -60,9 +60,9 @@
 .travel {
   display: flex;
   width: 100%;
-  height: 500px; // тестовая высота
+  height: 450px;
   margin-top: 48px;
-  flex-direction: column; // подсказка breakpoint
+  margin-bottom: 48px;
 }
 
 .travel-wrapper-img {
@@ -79,7 +79,6 @@
 }
 .travel-row {
   flex-direction: row;
-  flex-direction: column; // подсказка breakpoint
   @include between-children {
     margin-left: 10px;
   }
@@ -108,4 +107,31 @@
 .travel-text {
   text-align: center;
   width: 100%;
+}
+
+@include breakpoint-width (0px, 770px) {
+  .natus-container {
+    flex-direction: column;
+  }
+  .natus-icon {
+    margin-top: 48px;
+  }
+
+  .travel {
+    flex-direction: column;
+    margin-bottom: 596px;
+  }
+  .travel-column {
+    margin: 10px 0;
+  }
+  .travel-row {
+    flex-direction: column;
+    margin: 10px 0;
+    @include between-children {
+      margin: 10px 0;
+    }
+  }
+  .travel-image-block {
+    min-height: 241px;
+  }
 }
