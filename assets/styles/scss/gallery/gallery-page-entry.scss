@@ -35,3 +35,47 @@ h5 {
 	color: $darkGrey;
 	margin: 15px 0 32px 0;
 }
+
+@include breakpoint-width (993px, 1201px) {
+	.gallery-image-top {
+		justify-content: center;
+	}
+	.gallery-image {
+		max-width: 370px;
+		margin: 25px;
+	}
+	.image-g {
+		max-width: 370px;
+	}
+}
+
+@include breakpoint-width (777px, 993px) {
+	.gallery-image-top {
+		justify-content: center;
+	}
+	.gallery-image {
+		margin: 10px;
+	}
+}
+
+@include breakpoint-width (490px, 777px) {
+	.gallery-image-top {
+		justify-content: center;
+	}
+	.gallery-image {
+		max-width: 370px;
+		margin: 5px;
+	}
+	.image-g {
+		max-width: 370px;
+	}
+}
+
+@include breakpoint-width (0px, 490px) {
+	.gallery-image-top {
+		justify-content: center;
+	}
+	.gallery-image {
+		margin: 0px;
+	}
+}
