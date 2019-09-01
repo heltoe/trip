@@ -62,6 +62,7 @@ a {
   text-decoration: none;
 }
 
+
 // стили изображений
 .img-radius {
   width: 88px;
@@ -104,6 +105,9 @@ a {
 }
 
 // регистр текста 
+.capitalize {
+text-transform: capitalize
+}
 .upperCase {
   text-transform: uppercase;
 }
@@ -136,6 +140,10 @@ a {
 
 .sizeNormal {
   font-size: 50px;
+}
+.letter-min {
+  letter-spacing: 1px;
+  
 }
 .letter {
 letter-spacing: 5px;

@@ -26,6 +26,12 @@
   max-width: 730px;
   padding: 16px 0;
 }
+.footer-text {
+  font-size: 17px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: #707579;
+}
 .footer-socials {
   display: flex;
   justify-content: flex-end;
@@ -72,11 +78,6 @@
   padding: 20px 0;
   border-top: 1px solid #222;
   cursor: pointer;
-}
-.footer-text {
-  font-size: 17px;
-  line-height: 2em;
-  letter-spacing: 1px;
 }
 .footer-link {
   transition: 0.3s ease-in-out;

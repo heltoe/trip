@@ -1,0 +1,50 @@
+.main-about {
+	display: flex;
+	margin-top: 110px;
+}
+.left-about {
+	padding: 0 15px;
+	width: 50%;
+}
+.title-about {
+	margin-top: 24px;
+}
+.slogan-about {
+	margin: 24px 0 12px 0;
+}
+.text-about {
+	font-size: 17px;
+	line-height: 34px;
+	color: #707579;
+}
+.right-about {
+	padding: 0 15px;
+}
+.img-about {
+	max-width: 100%;
+}
+.about-img {
+  padding: 64px 0;
+  margin: 72px 0;
+  background-image: url('../../images/banner2.jpg');
+}
+.about-text {
+  margin: 48px 0 24px 0;
+  text-align: center;
+  font-size: 17px;
+  line-height: 34px;
+  color: #bbb;
+}
+.about-button {
+  display: flex;
+  font-size: 15px;
+  padding: 14px 25px;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #da9d40;
+  border: 2px solid #da9d40;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
