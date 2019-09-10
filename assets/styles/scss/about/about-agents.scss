@@ -1,14 +1,15 @@
 
 .card-agents {
 	display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 .agent {
-	padding: 15px;
-	flex: 0 0 25%;
-  max-width: 25%;
+  width: 23%;
 	position: relative;
   transition: all .2s ease-out 0s;
 	text-align: center;
+  overflow: hidden;
 	&:after {
 		content: "";
 		width: 86%;
@@ -29,7 +30,7 @@
 		}
 		.agent-animation {
 			opacity: 1;
-			transform: translate(-50%, -50%);
+      transform: rotate3d(-1, 1, 0, 0deg);
 		}
 	}
 }
@@ -39,15 +40,14 @@
 	align-items: center;
 	flex-direction: column;
 	position: absolute;
-	left: 50%;
-	top: 40%;
-	opacity: 0;
-	transition: 0.3s ease-in-out;
 	width: 86%;
-	height: 86%;
+  height: 86%;
+  top: 7%;
+  left: 7%;
+	transition: 0.3s ease-in-out;
 	z-index: 10;
-	transform: translate(-35%, -20%);
-  transition: all .4s ;
+  transform: rotate3d(-1, 1, 0, 100deg);
+  transition: all .4s ease-in-out 0s;
 }
 .img-thumbnail {
 	padding: 4px;
