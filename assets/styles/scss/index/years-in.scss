@@ -3,6 +3,7 @@
 .container-stats {
   background-image: url('../../images/banner4.jpg');
   padding: 72px 0;
+  text-align: center;
 }
 
 .stats-grids {
@@ -33,6 +34,9 @@
 .main-right-stats {
   display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .right-stats-title {
@@ -45,22 +49,39 @@
 }
 
 .circle {
+  display: flex;
   font-size: 20px;
   background: rgb(248, 249, 250);
   width: 65px;
   height: 65px;
   text-align: center;
+  margin: auto;
   line-height: 65px;
   border-radius: 50%;
 }
 
 .icon-stats {
-  margin: 0 auto;
   background-size: contain;
 }
 
 .people {
   background-image: url('../../images/socials/users.svg');
+}
+
+.table {
+  background-image: url('../../images/socials/table.svg');
+}
+
+.folder {
+  background-image: url('../../images/socials/folder.svg');
+}
+
+.people , .table , .folder {
+  background-repeat: no-repeat;
+  display: flex;
+  margin: auto;
+  width: 26px;
+  height: 20px;
 }
 
 @include largeTable {

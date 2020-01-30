@@ -94,10 +94,11 @@
   align-items: center;
   position: absolute;
   left: 0;
-  top: 50px;
+  top: 60px;
   background-color: $white;
   max-height: 200px;
   transition: 0.2s ease-in-out;
+  overflow: hidden;
 }
 .mobile-links {
   text-align: center;

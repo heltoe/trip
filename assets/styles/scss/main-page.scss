@@ -1,17 +1,58 @@
 @import "constants.scss";
 
+.container-hero {
+  display: flex;
+  overflow: hidden;
+}
+.prev , .next {
+  cursor: pointer;
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  color: white;
+  font-size: 30px;
+  transition: 0.5s ease-in-out;
+  border-radius: 0 3px 3px 0;
+  outline: none;
+  background-color: rgba(0, 0 ,0 ,0) ;
+  border: none;
+  transition: 0.3s ease-in-out ;
+}
+.hide {
+  opacity: 0;
+}
+.next {
+  display: block;
+  right: 5%;
+  left: auto;
+}
+.wrapper_slides {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  transition: 0.3s ease-in-out;
+}
 .main-hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
+  min-width: 100%;
+  height: 80vh;
   min-height: 320px;
   background-color: #fafafa;
   background-image: url('../../images/banner1.jpg');
   position: relative;
   padding: 0 10px;
+}
+.img1 {
+  background-image: url('../../images/banner2.jpg');
+}
+.img2 {
+  background-image: url('../../images/banner3.jpg');
+}
+.img3 {
+  background-image: url('../../images/banner4.jpg');
 }
 .overlay {
   position: absolute;
@@ -49,6 +90,20 @@
     background-color: $white;
     color: $black;
   }
+}
+.scroll-top {
+  background: url('../../images/move-top.png') no-repeat;
+  display: inline-block;
+  position: fixed;
+  border: none;
+  outline: none;
+  opacity: 0;
+  width: 34px;
+  height: 34px;
+  bottom: 2%;
+  right: 2%;
+  z-index: 0;
+  transition: 0.5s ease-in-out;
 }
 
 @include bigTable {

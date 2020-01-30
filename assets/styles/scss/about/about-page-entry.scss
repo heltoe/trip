@@ -11,6 +11,8 @@
 }
 
 .about-block-text {
+  align-items: center;
+  display: grid;
   padding: 64px 0;
   max-width: 750px;
   margin: auto;
@@ -63,4 +65,28 @@
   outline: none;
   margin: 0 auto;
   cursor: pointer;
+}
+
+@include breakpoint-width(0, 1200px) {
+  .text-about {
+    font-size: 14px;
+  }
+  .title-about{
+    font-size: 20px;
+  }
+  .slogan-about {
+    font-size: 20px;
+  }
+}
+
+@include breakpoint-width(0, 995px) {
+  .main-about{
+    display: block;
+    margin-top: 50px;
+    max-width: 540px;
+  }
+  .left-about {
+    text-align: center;
+    width: 100%;
+  }
 }

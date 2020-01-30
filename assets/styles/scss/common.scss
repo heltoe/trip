@@ -8,7 +8,6 @@
 
 html {
   font-family: 'Webfont', sans-serif;
-  min-width: 320px;
 }
 
 body, html {
@@ -18,6 +17,7 @@ body, html {
 body {
   display: flex;
   flex-direction: column;
+  min-width: 320px;
 }
 
 // основная оболочка проекта

@@ -13,7 +13,7 @@
   justify-content: flex-end;
   width: 100%;
 }
-.email-input {
+.input-email {
   height: 54px;
   margin-right: 3%;
   padding: 10px 5px;
@@ -24,10 +24,23 @@
   border: none;
   border-bottom: 1px solid #333;
   background: none;
-  outline: none; // для отмены выделения при нажатии
+  outline: none;
+  transition: 0.3s ease-in-out;
+  &::placeholder {
+    transition: 0.3s ease-in-out;
+  } 
+}
+
+.input-invalid {
+  color: red;
+  border-bottom: 1px solid red;
+  &::placeholder {
+    color: red;
+  }
 }
 
 .email-button {
+  margin: 10px 0;
   height: 54px;
   color: $white;
   font-size: 16px;
@@ -37,6 +50,7 @@
   border: 2px solid $orange;
   border-radius: 5px;
   cursor: pointer;
+  outline: none;
 }
 
 .email-text {

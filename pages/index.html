@@ -11,7 +11,7 @@
   <div class="absolute-nav">
     <div class="wrapper">
       <!-- начало десктопного меню -->
-      <div class="navigation">
+      <div class="navigation ">
         <a href="index.html" class="navigation-logo white normal logo">Commute</a>
         <div class="navigation-wrapper__links">
           <a href="index.html" class="navigation-links white medium">Home</a>
@@ -19,7 +19,7 @@
           <a href="services.html" class="navigation-links lightGrey medium">Services</a>
           <a href="gallery.html" class="navigation-links lightGrey medium">Gallery</a>
           <a href="contact.html" class="navigation-links lightGrey medium">Contact</a>
-          <a href="tel:89255702395" class="navigation-phone lightGrey normal">8(925)570-23-95</a>
+          <a href="tel:89255702395" class="navigation-phone lightGrey normal">8(999)808-00-18</a>
         </div>
       </div>
       <!-- конец десктопного меню -->
@@ -35,7 +35,7 @@
           <a href="services.html" class="mobile-links black medium">Services</a>
           <a href="gallery.html" class="mobile-links black medium">Gallery</a>
           <a href="contact.html" class="mobile-links black medium">Contact</a>
-          <a href="tel:89255702395" class="mobile-links black normal">8(925)570-23-95</a>
+          <a href="tel:89255702395" class="mobile-links black normal">8(999)808-00-18</a>
         </div>
       </div>
       <!-- конец мобильного меню -->
@@ -43,15 +43,35 @@
   </div>
   <!-- конец навигации -->
   <!-- начало контента -->
-  <div class="main-hero div-img">
-    <div class="overlay"></div>
-    <h2 class="hero-title white upperCase normal">Trip Now Exceptional Adventure</h2>
-    <p class="hero-description lightGrey light">
-       Vestibulum consequat. Curabitur mauris justo
-    </p>
-    <button class="hero-button white medium">
-      Read More
-    </button>
+  <div class="container-hero">
+    <div class="wrapper_slides">
+      <div class="main-hero div-img">
+        <div class="overlay"></div>
+        <h2 class="hero-title white upperCase normal">Trip Now Exceptional Adventure</h2>
+        <p class="hero-description lightGrey light">Vestibulum consequat. Curabitur mauris justo</p>
+        <a class="hero-button white medium" href="about.html">Read More</a>
+      </div>
+      <div class="main-hero img1 div-img">
+        <div class="overlay"></div>
+        <h2 class="hero-title white upperCase normal">Trip Now Exceptional Adventure</h2>
+        <p class="hero-description lightGrey light">Vestibulum consequat. Curabitur mauris justo</p>
+        <a class="hero-button white medium" href="about.html">Read More</a>
+      </div>
+      <div class="main-hero img2 div-img">
+        <div class="overlay"></div>
+        <h2 class="hero-title white upperCase normal">Trip Now Exceptional Adventure</h2>
+        <p class="hero-description lightGrey light">Vestibulum consequat. Curabitur mauris justo</p>
+        <a class="hero-button white medium" href="about.html">Read More</a>
+      </div>
+      <div class="main-hero img3 div-img">
+        <div class="overlay"></div>
+        <h2 class="hero-title white upperCase normal">Trip Now Exceptional Adventure</h2>
+        <p class="hero-description lightGrey light">Vestibulum consequat. Curabitur mauris justo</p>
+        <a class="hero-button white medium" href="about.html">Read More</a>
+      </div>
+    </div>
+    <button id="prev" href="" class="prev hide">&#10094</button>
+    <button id="next" href="" class="next">&#10095</button>
   </div>
   <!-- конец навигации -->
   <!-- начало контента what we do-->
@@ -99,17 +119,23 @@
           <div class="right-stats-title">
             <p class="text-stats darkwhite">Happy Customers</p>
             <h4 class="right-h4 hard white">12k</h4>
-            <span class="circle people icon-stats"></span>
+            <span class="circle icon-stats">
+              <span class="people"></span>
+            </span>
           </div>
           <div class="right-stats-title">
             <p class="text-stats darkwhite">Completed Work</p>
             <h4 class="right-h4 hard white">15k</h4>
-            <span class="circle table icon-stats"></span>
+            <span class="circle icon-stats">
+              <span class="table"></span>
+            </span>
           </div>
           <div class="right-stats-title">
             <p class="text-stats darkwhite">Total Tours</p>
             <h4 class="right-h4 hard white">25k</h4>
-            <span class="circle folder icon-stats"></span>
+            <span class="circle icon-stats">
+              <span class="folder"></span>
+            </span>
         </div>
       </div>
     </div>
@@ -163,7 +189,7 @@
       <div class="wrapper">
           <h3 class="ready-title white medium">We Are Ready To Work With You</h3>
           <p class="ready-text wrapper">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum</p>
-        <button class="ready-button">Contact Us</button>
+        <a class="ready-button" href="contact.html">Contact Us</a>
       </div>
   </div>
   <!-- конец контента -->
@@ -175,12 +201,13 @@
         <div class="email-block">
           <h3 class="email-text normal sizeMin darkBlue">Duis nisi sapien, elementum finibus fermentum eget, aliquet a leo.</h3>
           <div class="input-button">
-            <input class ="email-input" type="email" placeholder="Enter your email...">
+            <input data-class="email" placeholder="Enter your email..." type="text" class ="input-email input-subscribe" placeholder="Enter your email...">
             <button class="email-button normal">Subscribe</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </div>
   <!-- конец контента -->
@@ -214,7 +241,11 @@
       </p>
     </div>
   </div>
+    <button class="scroll-top" href=""></button>
   <!-- конец контента -->
+  <script src="../js/slider.js"></script>
   <script src="../js/header.js"></script>
+  <script src="../js/newsletter.js"></script>
+  <script src="../js/scroll.js"></script>
 </body>
 </html>
