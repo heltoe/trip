@@ -53,7 +53,7 @@ textarea {
 }
 
 .button-contact {
-	margin-bottom: 48px;
+	margin-bottom: 55px;
 	background: $orange;
 	font-size: 15px;
 	display: inline-block;
@@ -64,6 +64,23 @@ textarea {
 	margin-top: 0px;
 	cursor: pointer;
 	border-radius: 0px;
+}
+.feedback-contact {
+	position: absolute;
+	left: 15px;
+    bottom: 20px;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+  
+.feedback-contact-success {
+	opacity: 1;
+	color: green;
+}
+  
+.feedback-contact-error {
+	opacity: 1;
+	color: red;
 }
 
 .map1 {

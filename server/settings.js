@@ -1,6 +1,6 @@
 const fs = require('fs')
 // auto generate pages
-let getFiles = dir => {
+const getFiles = dir => {
   const arrfiles = fs.readdirSync(dir)
   return arrfiles.map(item => `/${item.slice(0, -5)}`)
 }

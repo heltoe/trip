@@ -51,6 +51,10 @@
   border-radius: 5px;
   cursor: pointer;
   outline: none;
+  transition: 0.3s ease-in-out;
+  &:disabled {
+    opacity: 0.7;
+  }
 }
 
 .email-text {
@@ -58,6 +62,22 @@
   width: 100%;
   padding: 0 15px;
 }
+
+.feedback {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.feedback-success {
+  opacity: 1;
+  color: green;
+}
+
+.feedback-error {
+  opacity: 1;
+  color: red;
+}
+
 
 @include breakpoint-width (0px, 769px) {
   .email-block {
