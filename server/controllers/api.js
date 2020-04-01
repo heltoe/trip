@@ -5,7 +5,7 @@ class Api {
     try {
       // проверка на наличие содержимого поля
       if(!req.body.email.length)
-          return res.status(404).json({ status: 'Data must be require' })
+        return res.status(404).json({ status: 'Data must be require' })
       // формируем тестовый текст
       const messageToEmail = {
         title: 'Успешная подписка на сервисе',
@@ -15,8 +15,9 @@ class Api {
         </div>
         `
       }
+      // запрос
       await Sendler.sendTo(req.body.email, messageToEmail)
-      res.status(200).json({ status: 'Ok' })
+      res.status(200).json({ status: 'ok' })
     } catch (e) {
       res.status(404).json({ status: 'Error subscribe' })
     }
@@ -26,7 +27,7 @@ class Api {
       const { name, number, email, subject, message } = req.body
       // проверка на наличие содержимого полей
       if(!name.length || !number.length || !email.length || !subject.length)
-          return res.status(404).json({ status: 'Data must be require' })
+        return res.status(404).json({ status: 'Data must be require' })
       // формируем тестовый текст
       let strTemplate = `
         Имя: ${name}<br>
@@ -39,8 +40,9 @@ class Api {
         title: 'Успешная подписка на сервисе',
         body: strTemplate
       }
+      // запрос
       await Sendler.sendTo(email, messageToEmail)
-      res.status(200).json({ status: 'Ok' })
+      res.status(200).json({ status: 'ok' })
     } catch (e) {
       res.status(404).json({ status: 'Error send-form' })
     }
