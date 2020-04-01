@@ -7,7 +7,7 @@ class Api {
       if(!req.body.email.length)
           return res.status(404).json({ status: 'Data must be require' })
       // формируем тестовый текст
-      const toEmail = {
+      const messageToEmail = {
         title: 'Успешная подписка на сервисе',
         body: `
         <div>
@@ -15,7 +15,7 @@ class Api {
         </div>
         `
       }
-      await Sendler.sendTo(req.body.email, toEmail)
+      await Sendler.sendTo(req.body.email, messageToEmail)
       res.status(200).json({ status: 'Ok' })
     } catch (e) {
       res.status(404).json({ status: 'Error subscribe' })
@@ -25,20 +25,21 @@ class Api {
     try {
       const { name, number, email, subject, message } = req.body
       // проверка на наличие содержимого полей
-      if(!name.length || !number.length || !email.length || !subject.length || !message.length)
+      if(!name.length || !number.length || !email.length || !subject.length)
           return res.status(404).json({ status: 'Data must be require' })
       // формируем тестовый текст
-      const toEmail = {
+      let strTemplate = `
+        Имя: ${name}<br>
+        Телефон: ${number}<br>
+        Почта: ${email}<br>
+        Тема: ${subject}<br>
+      `
+      if (message.length) strTemplate += `Сообщение: ${message}`
+      const messageToEmail = {
         title: 'Успешная подписка на сервисе',
-        body: `
-          Имя: ${name}<br>
-          Телефон: ${number}<br>
-          Почта: ${email}<br>
-          Тема: ${subject}<br>
-          Сообщение: ${message}
-        `
+        body: strTemplate
       }
-      await Sendler.sendTo(email, toEmail)
+      await Sendler.sendTo(email, messageToEmail)
       res.status(200).json({ status: 'Ok' })
     } catch (e) {
       res.status(404).json({ status: 'Error send-form' })

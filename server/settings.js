@@ -6,7 +6,7 @@ const getFiles = dir => {
 }
 module.exports = {
   PAGES: getFiles('static/pages'),
-  PORT: 3000 || process.env.PORT,
+  PORT: 3001 || process.env.PORT,
   smtp: {
     email: 'zhvladik1995@gmail.com',
     password: 'Vladik24051995'

@@ -8,15 +8,15 @@ const subscribe = async () => {
     if (inputemail.value.length < 4) {
       return inputemail.classList.add('input-invalid')
     }
-    button.setAttribute('disabled', 'disabled')
+    button.disabled = true
     feedback.classList.remove('feedback-success')
     feedback.classList.remove('feedback-error')
-    const responce = await fetch('http://localhost:3000/api/subscribe', {
+    const response = await fetch('http://localhost:3001/api/subscribe', {
       method: 'POST' , 
       headers: {'Content-Type': 'application/json'}, 
-      body: JSON.stringify({ email: '' })
+      body: JSON.stringify({ email: inputemail.value })
     })
-    console.log(responce)
+    if (response.status === 404) throw new Error('Сервис временно не работает')
     feedback.innerHTML = 'Заявка успешно отправлена'
     feedback.classList.add('feedback-success')
   } catch(error) {
@@ -24,8 +24,7 @@ const subscribe = async () => {
     feedback.innerHTML = 'Сервис временно не работает'
     feedback.classList.add('feedback-error')
   } finally {
-    console.log(11111)
-    button.removeAttribute('disabled')
+    button.disabled = false
   }
 }
 const removeSubscribeClass = (event) => {

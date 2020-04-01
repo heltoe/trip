@@ -3,9 +3,6 @@ const input = document.querySelectorAll('.email-input')
 const textArea = document.querySelector('.form-text-area')
 const feedbackContact = document.querySelector('.feedback-contact')
 
-console.log(textArea)
-
-
 const addClass = async () => {
 	try {
 		let isValid = true
@@ -25,23 +22,23 @@ const addClass = async () => {
 			}
     })
     if (!isValid) return false
-		btn.setAttribute('disabled', 'disabled')
+    btn.disabled = true
 		feedbackContact.classList.remove('feedback-contact-success')
     feedbackContact.classList.remove('feedback-contact-error')
-		const responce = await fetch('http://localhost:3000/api/contact', {
+		const response = await fetch('http://localhost:3001/api/contact', {
 			method: 'POST' , 
 			headers: {'Content-Type': 'application/json'}, 
 			body: JSON.stringify(fieldes)
-		})
-		console.log(responce)
+    })
+    if (response.status === 404) throw new Error('Сервис временно не работает')
 		feedbackContact.innerHTML = 'Заявка успешно отправлена'
     feedbackContact.classList.add('feedback-contact-success')
 	} catch(error) {
-		console.log(error)
+		console.log(888, error)
 		feedbackContact.innerHTML = 'Сервис временно не работает'
 		feedbackContact.classList.add('feedback-contact-error')
 	} finally {
-		console.log(11111)
+    btn.disabled = false
 	}
 }
 const removeClass = (event) => {
